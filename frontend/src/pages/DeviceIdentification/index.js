@@ -1,0 +1,1 @@
+export { DeviceIdentificationPage } from './DeviceIdentificationPage';

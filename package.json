@@ -1,0 +1,26 @@
+{
+  "name": "forencctv-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ForenCCTV – Unified DVR/NVR Forensic Analysis Platform (SIH 2026 PS ID: SIH26150)",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "preview": "npm run preview --prefix frontend",
+    "server": "npm run dev --prefix backend"
+  },
+  "keywords": [
+    "cctv-forensics",
+    "dvr-forensics",
+    "nvr-parser",
+    "blockchain-custody",
+    "sih2026",
+    "cybersecurity"
+  ],
+  "author": "ForenCCTV Team",
+  "license": "MIT"
+}

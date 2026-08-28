@@ -1,0 +1,55 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node / Dependencies
+node_modules
+dist
+dist-ssr
+*.local
+build/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment Variables & Secrets (CRITICAL SECURITY)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.pfx
+
+# Raw CCTV Surveillance Dumps & Forensic Images
+# Prevent accidental committing of large raw disk dumps into Git repository
+*.mp4
+*.dav
+*.264
+*.h264
+*.h265
+*.E01
+*.dd
+*.raw
+*.001
+*.img
+*.vigi
+*.asf
+*.hvw
+*.unv
+*.mat
+!sample-data/**
+!docs/**

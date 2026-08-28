@@ -1,0 +1,82 @@
+/**
+ * ForenCCTV - Reconstructed Fragmented Video Streams (Deep Carving)
+ */
+
+export const INITIAL_CARVED_FILES = [
+  {
+    id: 'CRV-089-001',
+    caseId: 'FC-2026-089',
+    cameraRef: 'CAM-03 (Vault Interior)',
+    originalFileName: 'rec_ch03_20260821_024000.mp4 (DELETED)',
+    carvedFileName: 'CARVED_CH03_NAL_0x08A00000.h265',
+    startSector: '0x08A00000 (Cluster #282,624)',
+    endSector: '0x08F42000 (Cluster #293,408)',
+    recoveredSize: '542.4 MB',
+    detectedSignature: 'H.265 SPS (NAL Unit 0x40 0x01) + HKH Chunk Tag',
+    recoveryConfidence: 98.6,
+    status: 'Fully Recovered & Re-indexed',
+    duration: '18m 42s (28,050 frames)',
+    frameDrops: '0 missing I-Frames (GOP length = 50)',
+    sha256: 'ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb',
+    reconstructionMethod: 'Smart265+ GOP Boundary & HIK chunk reconstructor',
+    keyEvidenceFound: 'Suspect-01 pulled mask down at 02:44:18 AM revealing facial features under emergency light.',
+    previewAvailable: true
+  },
+  {
+    id: 'CRV-089-002',
+    caseId: 'FC-2026-089',
+    cameraRef: 'CAM-03 (Vault Interior)',
+    originalFileName: 'rec_ch03_20260821_025800.mp4 (DELETED)',
+    carvedFileName: 'CARVED_CH03_NAL_0x08F50000.h265',
+    startSector: '0x08F50000 (Cluster #293,568)',
+    endSector: '0x09310000 (Cluster #301,248)',
+    recoveredSize: '388.1 MB',
+    detectedSignature: 'H.265 PPS (NAL Unit 0x42 0x01)',
+    recoveryConfidence: 94.2,
+    status: 'Fully Recovered',
+    duration: '13m 15s (19,875 frames)',
+    frameDrops: '2 P-Frames dropped at cut point',
+    sha256: '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918',
+    reconstructionMethod: 'NAL Chain stitcher with PES timestamp interpolation',
+    keyEvidenceFound: 'Safe box 402 drilled and cash trays dumped into 2 dark duffel bags.',
+    previewAvailable: true
+  },
+  {
+    id: 'CRV-089-003',
+    caseId: 'FC-2026-089',
+    cameraRef: 'CAM-02 (Corridor)',
+    originalFileName: 'alarm_log_20260821.db (OVERWRITTEN HEADER)',
+    carvedFileName: 'CARVED_SQLITE_LOG_0x00E20000.bin',
+    startSector: '0x00E20000 (Cluster #28,928)',
+    endSector: '0x00E41000 (Cluster #29,192)',
+    recoveredSize: '16.8 MB',
+    detectedSignature: 'SQLite format 3 header (0x53 0x51 0x4C 0x69 0x74 0x65)',
+    recoveryConfidence: 89.0,
+    status: 'Partially Recovered (Parsed)',
+    duration: 'N/A (Database Log)',
+    frameDrops: 'N/A',
+    sha256: 'b45cffe084dd3d20d928bee85e7b0f21408779930f5ec472e3914a51e60058b7',
+    reconstructionMethod: 'B-Tree leaf carver for event log strings',
+    keyEvidenceFound: 'Internal bypass card #CARD-ADM-9982 was swiped at 02:22:14 AM.',
+    previewAvailable: false
+  },
+  {
+    id: 'CRV-089-004',
+    caseId: 'FC-2026-089',
+    cameraRef: 'CAM-04 (Rear Dock)',
+    originalFileName: 'rec_ch04_deleted_buffer_01.dav',
+    carvedFileName: 'CARVED_CH04_DHAV_0x02100000.dav',
+    startSector: '0x02100000 (Cluster #67,584)',
+    endSector: '0x02560000 (Cluster #76,544)',
+    recoveredSize: '460.0 MB',
+    detectedSignature: '0x44484156 (DHAV magic byte payload)',
+    recoveryConfidence: 97.1,
+    status: 'Fully Recovered',
+    duration: '16m 00s (24,000 frames)',
+    frameDrops: '0 missing frames',
+    sha256: '1e4e88e364052d113c233c411516f128c73a3c89b33a593798cf64e262a4d33a',
+    reconstructionMethod: 'DHAV Frame Index Generator v2.4',
+    keyEvidenceFound: 'Getaway vehicle arrived at 02:18:00 AM with engine running and headlights dimmed.',
+    previewAvailable: true
+  }
+];

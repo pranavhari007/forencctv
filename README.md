@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ForenCCTV
 
 **Unified DVR/NVR Forensic Analysis Platform**
@@ -264,3 +265,6 @@ BLOCKCHAIN_RPC_URI=http://localhost:8545
 
 - **Smart India Hackathon 2026 Team**
 - **Problem Statement**: `SIH26150` (Blockchain & Cybersecurity)
+=======
+# forencctv
+>>>>>>> c270dc37fd965ebbe8dde51ae230224ee8b8ee60
